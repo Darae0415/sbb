@@ -10,7 +10,8 @@ public class HelloController {
     @GetMapping("/hello")
 //    @ResponseBody
     public String hello(Model model) {
-    	model.addAttribute("message","Hello, Thymeleaf");
+    	model.addAttribute("name","Hello, Thymeleaf");
+    	model.addAttribute("message","Hong GilDong");
     	//모델 message => 뷰템플릿
         return "hello";
     }
